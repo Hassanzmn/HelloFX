@@ -31,7 +31,7 @@ public class MainPresenter {
             if (newValue) {
                 AppBar appBar = AppManager.getInstance().getAppBar();
                 appBar.setNavIcon(MaterialDesignIcon.MENU.button(e -> AppManager.getInstance().getDrawer().open()));
-                appBar.setTitleText("PixiSky");
+                appBar.setTitleText("PixiSky App");
             }
         });
         label.setText(String.format(resources.getString("label.text"), "JavaFX", javafxVersion));
