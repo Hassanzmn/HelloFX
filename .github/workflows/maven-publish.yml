@@ -17,7 +17,7 @@ jobs:
     - name: Setup GraalVM built by Gluon
       uses: gluonhq/setup-graalvm@master
       env:
-        GITHUB_TOKEN: ${{ github.token }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     # Install extra requirements on top of ubuntu-latest
     - name: Install libraries
